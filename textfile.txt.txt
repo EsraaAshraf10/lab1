@@ -1,0 +1,26 @@
+1- Pull Request :
+
+A pull request is a proposal to merge a set of changes from one branch into another. 
+In a pull request, collaborators can review and discuss the proposed set of changes before they integrate the changes into the main codebase. 
+Pull requests display the differences, or diffs, between the content in the source branch and the content in the target branch.
+
+
+2- Tagging Release :
+
+Git tags are a lot like Git branches. 
+They're labels that point to specific commits, and can be used to check out a repository at a specific point in time.
+However, unlike branches, they're not meant to be updated and changed, and will always point to a specific version.
+
+
+3- Ignore Files :
+
+There are various types of files we might want the git to ignore before committing, for example, the files that are to do with our user settings or any utility setting, private files like passwords and API keys. 
+These files are not of any use to anyone else and we do not want to clutter our git.
+
+
+4- SSH :
+
+An SSH key is an access credential for the SSH (secure shell) network protocol. 
+This authenticated and encrypted secure network protocol is used for remote communication between machines on an unsecured open network. 
+SSH is used for remote file transfer, network management, and remote operating system access. 
+The SSH acronym is also used to describe a set of tools used to interact with the SSH protocol.
