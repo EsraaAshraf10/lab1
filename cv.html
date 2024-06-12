@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cv Template</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      
+      * {
+    box-sizing: border-box;
+     }
+
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    }
+
+    header {
+    background-color: orange;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    }
+
+    header .info {
+    text-align: center;
+    }
+
+    header img.pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    }
+
+    main {
+    padding: 20px;
+    }
+
+    aside {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    }
+
+    aside h2 {
+    margin-top: 20px;
+    }
+
+    aside ul {
+    padding: 0;
+    list-style: none;
+    }
+
+    aside ul li {
+    margin-bottom: 10px;
+    }
+
+    article {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+    }
+
+    article div {
+    margin-bottom: 20px;
+    }
+
+    footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    }  
+      
+/* Flexbox for larger screens */
+
+/* @media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    aside {
+        width: 30%;
+    }
+
+    article {
+        width: 65%;
+    }
+}  */
+
+
+/* Media queries for larger screens */
+/* 
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    aside {
+        width: 30%;
+    }
+
+    article {
+        width: 65%;
+    }
+} */
+
+/* CSS Grid for larger screens */
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: auto 1fr;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    main {
+        grid-template-columns: 1fr 2fr;
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        margin: 0;
+    }
+
+    article {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+        <header>
+            <span>
+                <img src="img/img1.png" alt="avatar" class="pic"
+                    style=" width: 150px;  margin-left: 15%; display: inline-block; border-radius: 50%;"/>
+            </span>
+             <span class="info" >
+                <h1>ANDREW HLOOM</h1>
+                <h5>PROFESSION</h5>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dicta!</p>      
+            </span>  
+        </header>
+        <main>
+            <aside >
+                <div class="contact">
+                    <h2 onmouseover="playSound()" onmouseout="pauseSound()">Contact</h2>
+                        <audio id="aud" autoplay>
+                            <source src="./start-13691.mp3" type="audio/mp3">
+                        </audio>
+                        <ul>
+                            <li><i class="fa-solid fa-house-chimney" style="color: orange"></i>123 Park Avenue, Michigan , MI</li><br><br>
+                               <!-- <img class="icon" src="../html5(1)/img/HomeIcon.png"/>
+                               <span class="I">123 Park Avenue, Michigan , MI</span> -->
+                           </li> 
+                            <li><i class="fa-solid fa-phone" style="color: orange"></i>123 456 7899</li><br><br>
+                                <!-- <img class="icon" src="../html5(1)/img/PhoneIcon.png"/>
+                                <span class="I">123 456 7899</span> -->
+                            </li>
+                            <li><i class="fa-solid fa-envelope" style="color: orange"></i>Info@hlcoom.com</li><br><br>
+                                <!-- <img class="icon" src="../html5(1)/img/Emailicon.png"/>
+                                <span class="I">Info@hlcoom.com</span> -->
+                            </li>
+                            <li><i class="fa-solid fa-link" style="color: orange"></i>www.hlcoom.com</li><br><br>
+                                <!-- <img class="icon" src="../html5(1)/img/linkicon.png"/>
+                                <span class="I">www.hlcoom.com</span> -->
+                            </li>
+                            
+                        </ul>
+                     
+                </div>
+
+                <div class="language">
+                    <h2>language</h2>
+                    <div class="language-meter">
+                        <p class="p" id="english-label">English</p>
+                        <meter value="65" min="0" max="100">65%</meter>
+                    </div> 
+                    <div class="language-meter">
+                        <p class="p"id="french-label">German</p>
+                        <meter value="30" min="0" max="100">30%</meter>
+                    </div>
+                        <div class="language-meter">
+                            <p class="p"id="french-label">Spanish</p>
+                            <meter value="85" min="0" max="100">85%</meter>
+                        </div>
+               </div>
+
+            <div class="skills">
+                <h2>Skills</h2>
+                <div class="skills-meter">
+                    <p class="p"id="ai-label">AI</p>
+                    <meter value="95" min="0" max="100">95%</meter>
+                </div> 
+                <div class="skills-meter">
+                    <p class="p"id="ps-label">PS</p>
+                    <meter value="75" min="0" max="100">75%</meter>
+                </div>
+                    <div class="skills-meter">
+                        <p class="p"id="js-label">JS</p>
+                        <meter value="50" min="0" max="100">50%</meter>
+                    </div>
+                    <div class="skills-meter">
+                        <p class="p"id="css-label">CSS</p>
+                        <meter value="15" min="0" max="100">15%</meter>
+                    </div>
+           </div>
+           <div class="onlineInfo">
+            <h2> Online Info</h2>
+            <img  class="icon" src="./img/fbicon.png" alt="fbicon">
+            <a href="./facebook.html" target="_blank">/hloom</a>
+            <img class="icon" src="./img/g+icon.png" alt="gicon" style="width: 35px;">
+            <a href="./gmail.html" target="_blank">/hloom</a>
+           </div>
+            </aside>
+            <article>
+                <div>
+                    <div class="achievement">
+                       <h2> Achievement</h2>
+                    </div>
+                    <div class="project">
+                        <h4>2010 Lorem Project</h4>
+                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quo hic libero dolore aspernatur, assumenda excepturi. Velit alias neque facilis?</p>
+                        <h4>2012 Lorem Project </h4>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt delectus vel consectetur ipsa minima earum ipsum laboriosam quaerat? Laudantium, rem. Assumenda dolor provident neque quaerat voluptas vitae inventore, a non.</p>
+                        <h4>2015 Lorem Project </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit unde quas totam, hic qui vel vitae nam adipisci cumque veritatis!</p>
+                    </div>
+                   
+                </div>
+                <div>
+                    <div class="education">
+                        <h2>Education</h2>
+                     </div>
+                     <div class="certificates">
+                         <h4>1997-2001 ABC School</h4>
+                         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, qui.</p>
+                         <h4>2001-2004 Chio University </h4>
+                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, maxime!</p>
+                         <h4>2004-2006 ABC Studies </h4>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, reprehenderit?</p>
+                     </div>
+                </div>
+                <div>
+                    <div class="work">
+                        <h2> Work Experience</h2>
+                     </div>
+                     <div class="experience">
+                        <h4>2010-2013 ABC Company</h4>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, qui.</p>
+                        <h4>2013-2015 Zoom Company </h4>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, maxime!</p>
+                     </div>
+                </div>
+            </article>
+        </main>    
+        <footer>
+            <video controls id="vid" width="100%" height="240" onclick="playVid(this)">
+                <source src="./vid.mp4" type="video/mp4">
+            </video>
+        </footer>
+        <script>
+            function playSound(){
+                document.getElementById('aud').play()
+            }
+            function pauseSound(){
+                document.getElementById('aud').pause()
+            }
+
+            function playVid(vid) {
+            if (vid.paused) {
+                vid.play()
+            } else {
+                vid.pause()
+            }
+        }
+        </script>
+</body>
+</html>
